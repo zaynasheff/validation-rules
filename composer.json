@@ -1,0 +1,59 @@
+{
+  "name": "zaynasheff/validation-rules",
+  "description": "A collection of reusable validation rules for Laravel applications.",
+  "keywords": [
+    "laravel",
+    "validation",
+    "validation-rules",
+    "snils",
+    "inn"
+  ],
+  "homepage": "https://github.com/zaynasheff/validation-rules",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Roman Zaynashev",
+      "homepage": "https://github.com/zaynasheff"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/zaynasheff/validation-rules/issues",
+    "source": "https://github.com/zaynasheff/validation-rules"
+  },
+  "require": {
+    "php": "^8.2",
+    "illuminate/contracts": "^10.0|^11.0|^12.0|^13.0"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.24",
+    "larastan/larastan": "^3.0",
+    "orchestra/testbench": "^10.0",
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zaynasheff\\ValidationRules\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zaynasheff\\ValidationRules\\ValidationRulesServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "analyse": "vendor/bin/phpstan analyse",
+    "format": "vendor/bin/pint"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
