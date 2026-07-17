@@ -52,7 +52,20 @@
   "scripts": {
     "test": "phpunit",
     "analyse": "vendor/bin/phpstan analyse",
-    "format": "vendor/bin/pint"
+    "format": "vendor/bin/pint",
+    "lint": [
+      "pint --test",
+      "@analyse",
+      "@test"
+    ],
+    "ci": [
+      "@lint"
+    ],
+    "fix": [
+      "@format",
+      "@analyse",
+      "@test"
+    ]
   },
   "minimum-stability": "stable",
   "prefer-stable": true
