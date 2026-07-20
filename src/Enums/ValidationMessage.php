@@ -15,4 +15,6 @@ enum ValidationMessage: string
     case AGE_BETWEEN = 'validation-rules::validation.age_between';
 
     case SNILS = 'validation-rules::validation.snils';
+
+    case INN = 'validation-rules::validation.inn';
 }
