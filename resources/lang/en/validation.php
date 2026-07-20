@@ -1,0 +1,27 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Common
+    |--------------------------------------------------------------------------
+    */
+
+    'invalid_date' => 'The :attribute must be a valid date.',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Age
+    |--------------------------------------------------------------------------
+    */
+
+    'age_min' => 'The :attribute must be at least :min years old.',
+
+    'age_max' => 'The :attribute must not be older than :max years.',
+
+    'age_between' => 'The :attribute must be between :min and :max years old.',
+
+];
