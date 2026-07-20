@@ -24,4 +24,11 @@ return [
 
     'age_between' => 'The :attribute must be between :min and :max years old.',
 
+    /*
+    |--------------------------------------------------------------------------
+    | Age
+    |--------------------------------------------------------------------------
+    */
+
+    'snils' => 'The :attribute must be a valid SNILS number.',
 ];
